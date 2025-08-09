@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@font-face {
+    font-family: "Undertale";
+    src: url('/crypt-of-tomorrow-ut-font-no-rus.ttf');
+}
+
+@font-face {
+    font-family: "Deltarune";
+    src: url('/deltarune.otf');
+}
+
+body {
+    @apply bg-green-950;
+    color: white;
+}
