@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import { draw } from "svelte/transition";
 
 //---- Setup ----\\
 
@@ -16,15 +17,14 @@ const grid: number[][] = [];
 //---- Func Nation ---\\
 
 function createGrid(cols: number, rows: number) {
-    let arr: number[] = [];
-
     for (let i = 0; i < cols; i++) {
+        let arr: number[] = [];
+
         for (let j = 0; j < rows; j++) {
             arr[j] = Math.floor(Math.random() * 2);
         }
 
         grid[i] = arr;
-        arr = [];
     }
 }
 
@@ -101,8 +101,6 @@ const click_toggle = [
 
 //---- Run ----\\
 
-createGrid(cols, rows);
-
 onMount(() => {
     const canvas = document.getElementById("kansas") as HTMLCanvasElement;
     const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
@@ -115,36 +113,23 @@ onMount(() => {
         let j = Math.floor(mouseY / res);
 
         for (const z of click_toggle) {
-            if (i + z.x > cols ||
+            if (i + z.x >= cols ||
                 i + z.x < 0 ||
-                j + z.y > rows ||
+                j + z.y >= rows ||
                 j + z.y < 0
-            ) return;
+            ) continue;
             toggleColor2(i + z.x, j + z.y);
         }
 
         drawGrid(ctx);
     });
 
-    document.addEventListener("keypress", (event) => {
-        if (event.key === "r") {
-            if (confirm("Do you wish to reset?")) {
-                for (let i = 0; i < cols; i++) {
-                    for (let j = 0; j < rows; j++) {
-                        grid[i][j] = 0;
-                    }
-                }
-            }
-            
-            drawGrid(ctx);
-        }
-    });
-
+    createGrid(cols, rows);
     drawGrid(ctx);
 });
 </script>
 
-<div class="pl-5 pr-3 pt-3 relative bg-linear-to-b from-green-600 to-[100vh] to-green-950">
+<div class="pl-5 pr-3 pt-3 relative bg-linear-to-b from-green-600 to-[100vh] to-green-950 min-h-[100vh]">
     <canvas id="kansas" width={cwidth} height={cheight}></canvas>
     <p>make all the squares black</p>
     <p>WARNING: this puzzle has a high chance to be generated in an unsolvable state. Sorry! It'll be fixed at some point.</p>
