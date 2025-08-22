@@ -1,0 +1,1 @@
+import"../chunks/DsnmJJEf.js";import"../chunks/69_IOA4Y.js";import{f as e,b as t}from"../chunks/RWiDrJhN.js";var a=e('<div class="pl-5 pr-3 pt-3 relative bg-linear-to-b from-green-600 to-[100vh] to-green-950 min-h-[100vh]"><img src="/pixelart/ricewyellowcurry.png" alt="Curry" class="cool-image w-[150px]"/></div>');function m(r){var o=a();t(r,o)}export{m as component};
