@@ -1,6 +1,5 @@
 <script lang="ts">
-  import { onMount } from "svelte";
-  import { draw } from "svelte/transition";
+import { onMount } from "svelte";
 
 //---- Setup ----\\
 
@@ -130,7 +129,8 @@ onMount(() => {
 </script>
 
 <div class="pl-5 pr-3 pt-3 relative bg-linear-to-b from-green-600 to-[100vh] to-green-950 min-h-[100vh]">
-    <canvas id="kansas" width={cwidth} height={cheight}></canvas>
-    <p>make all the squares black</p>
-    <p>WARNING: this puzzle has a high chance to be generated in an unsolvable state. Sorry! It'll be fixed at some point.</p>
+    <h1 class="text-6xl">that one Link's Awakening puzzle</h1>
+    <p>DISCLAIMER: this puzzle has a HIGH chance of being impossible due to how it's generated. Sorry! Have fun, though.</p>
+
+    <canvas id="kansas" width={cwidth} height={cheight} class="mt-6"></canvas>
 </div>

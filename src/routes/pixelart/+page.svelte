@@ -11,5 +11,5 @@
     <h1 class="text-6xl">pixel art</h1>
     <p>Pixel art I've made.</p>
 
-    <img src="/pixelart/gaster_dancer.gif" alt="Curry" class="w-[200px]">
+    <img src="/pixelart/gaster_dancer.gif" alt="Gaster Dance" class="w-[200px]">
 </div>

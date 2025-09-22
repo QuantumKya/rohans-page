@@ -29,37 +29,35 @@
 
 
     <div class="-ml-5 -mr-3 mt-[70vh] pl-4 w-full">
-        <h1 class="text-[50px] pl-2 pb-2">Projects</h1>
+        <h1 class="text-6xl pl-2 pb-2 mb-4">Old Projects</h1>
 
-        <ProjectItem name="DNA-Cryption" link="https://quantumkya.github.io/DNA-cryption/" date="Jun. 30th, 2025">
-            {#snippet contents()}
-                <span class="flex flex-row text-[450%]">
-                    <img src="/dna_question.png" alt="DNA Question" class="h-[100px]">
-                    <p>?</p>
-                </span>
-                <p>In other words...</p>
-                <p>Have you ever wanted to share a message using DNA?</p>
-            {/snippet}
-        </ProjectItem>
-        
-        <br>
+        <div class="flex flex-row flex-wrap gap-10">
+            <ProjectItem name="DNA-Cryption" link="https://quantumkya.github.io/DNA-cryption/" date="Jun. 30th, 2025">
+                {#snippet contents()}
+                    <span class="flex flex-row text-[450%]">
+                        <img src="/dna_question.png" alt="DNA Question" class="h-[100px]">
+                        <p>?</p>
+                    </span>
+                    <p>In other words...</p>
+                    <p>Have you ever wanted to share a message using DNA?</p>
+                {/snippet}
+            </ProjectItem>
 
-        <ProjectItem name="Differential Equation Visualizer" link="https://rohanqk6028.vercel.app/slopefield/index.html" date="Mar/Apr 2025">
-            {#snippet contents()}
-                <p>Enter a function of x and y, and recieve a slope field diagram of your DE!</p>
-                <pre>dy/dx = &lbrace;given function&rbrace;</pre>
-                <p>Includes points and lines that follow the slope field.</p>
-            {/snippet}
-        </ProjectItem>
-        
-        <br>
+            <ProjectItem name="Differential Equation Visualizer" link="https://rohanqk6028.vercel.app/slopefield/index.html" date="Mar/Apr 2025">
+                {#snippet contents()}
+                    <p>Enter a function of x and y, and recieve a slope field diagram of your DE!</p>
+                    <pre>dy/dx = &lbrace;given function&rbrace;</pre>
+                    <p>Includes points and lines that follow the slope field.</p>
+                {/snippet}
+            </ProjectItem>
 
-        <ProjectItem name="Ruby Mine" link="https://ruby.quantumkya.dev" date="Jul. 23rd, 2025">
-            {#snippet contents()}
-                <p>A Cookie Clicker-inspired incremental game!</p>
-                <p>I made it in Ruby on Rails for the Railway YSWS.</p>
-            {/snippet}
-        </ProjectItem>
+            <ProjectItem name="Ruby Mine" link="https://ruby.quantumkya.dev" date="Jul. 23rd, 2025">
+                {#snippet contents()}
+                    <p>A Cookie Clicker-inspired incremental game!</p>
+                    <p>I made it in Ruby on Rails for the Railway YSWS.</p>
+                {/snippet}
+            </ProjectItem>
+        </div>
 
         <div class="relative h-fit mt-[700px] pb-10">
             <h1 class="text-6xl font-extrabold text-center">The Dump</h1>
