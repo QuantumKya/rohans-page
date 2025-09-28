@@ -1,8 +1,28 @@
+<script>
+    import PixelDisplay from "$lib/PixelDisplay.svelte";
+</script>
 
 <svelte:head>
     <style>
         body {
             image-rendering: pixelated;
+        }
+
+        .image-show {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            justify-content: center;
+            text-align: center;
+            max-width: 150px;
+        }
+
+        .image-show img {
+            
+        }
+
+        .image-show p {
+            font-family: 'Deltarune';
         }
     </style>
 </svelte:head>
@@ -11,5 +31,131 @@
     <h1 class="text-6xl">pixel art</h1>
     <p>Pixel art I've made.</p>
 
-    <img src="/pixelart/gaster_dancer.gif" alt="Gaster Dance" class="w-[200px]">
+    <h2 class="text-3xl mt-8 mb-5">Random Stuff</h2>
+    <div class="flex flex-row flex-wrap gap-8">
+        <div class="image-show">
+            <img src="/pixelart/ricewyellowcurry.png" alt="Rice w/ Kadhi">
+            <p>Rice w/ Kadhi</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/Sprite-0001.png" alt="Point Meme">
+            <p>Pointing Meme</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/test.gif" alt="Puzzle Game MC">
+            <p>Puzzle Game MC</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/copper_wire.gif" alt="Copper Wire">
+            <p>Very Conductive Copper Wire</p>
+        </div>
+    </div>
+
+    <h2 class="text-3xl mt-8 mb-5">Baba Is You in Hindi</h2>
+    <div class="flex flex-row flex-wrap gap-8 text-2xl">
+        <div class="image-show">
+            <img src="/pixelart/babahindi/band.gif" alt="Shut">
+            <p>Shut</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babahindi/khule.gif" alt="Shut">
+            <p>Open</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babahindi/jhanda.gif" alt="Shut">
+            <p>Flag</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babahindi/divar.gif" alt="Shut">
+            <p>Wall</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babahindi/PATHHAR.gif" alt="Shut">
+            <p>Rock</p>
+        </div>
+    </div>
+
+    <h2 class="text-3xl mt-8 mb-5">Baba Is You in French</h2>
+    <div class="flex flex-row flex-wrap gap-8 text-2xl">
+        <div class="image-show">
+            <img src="/pixelart/babafrench/TOI.gif" alt="You">
+            <p>You</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babafrench/EST.gif" alt="Is">
+            <p>Is</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babafrench/DRAPEAU.gif" alt="Flag">
+            <p>Flag</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babafrench/BOÎTE.gif" alt="Box">
+            <p>Box</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babafrench/ROCHE.gif" alt="Rock">
+            <p>Rock</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babafrench/CRÂNE.gif" alt="Skull">
+            <p>Skull</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babafrench/DÉFAITE.gif" alt="Defeat">
+            <p>Defeat</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babafrench/EAU.gif" alt="Water">
+            <p>Water</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babafrench/GLACE.gif" alt="Ice">
+            <p>Ice</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babafrench/HERBE.gif" alt="Grass">
+            <p>Grass</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babafrench/ARRÊTE.gif" alt="Stop">
+            <p>Stop</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babafrench/MUR.gif" alt="Wall">
+            <p>Wall</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babafrench/GAGNE.gif" alt="Win">
+            <p>Win</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babafrench/TEXTE.gif" alt="Text">
+            <p>Text</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babafrench/POUSSE.gif" alt="Push">
+            <p>Push</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babafrench/NOT.gif" alt="Not">
+            <p>Not</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/babafrench/FAIT.gif" alt="Make">
+            <p>Make</p>
+        </div>
+    </div>
+
+    <h2 class="text-3xl mt-8 mb-5">UT/DR stupid stuff</h2>
+    <div class="flex flex-row flex-wrap gap-8">
+        <div class="image-show">
+            <img src="/pixelart/gaster_dancer.gif" alt="Gaster Dance">
+            <p>Gaster Dance</p>
+        </div>
+        <div class="image-show">
+            <img src="/pixelart/togoreDark.png" alt="Togore (Dark World)">
+            <p>Togore (Dark World)</p>
+        </div>
+    </div>
 </div>
